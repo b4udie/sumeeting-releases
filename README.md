@@ -8,12 +8,10 @@
 
 ## Завантаження
 
-👉 **[Останній реліз](../../releases/latest)** — там два файли:
-
-| Файл | Що це |
-|------|-------|
-| `SuMeeting.dmg` | macOS-застосунок (підписаний і нотаризований Apple) |
-| `SuMeeting-extension.zip` | Chrome-розширення для запису Meet |
+| Компонент | Де взяти |
+|-----------|----------|
+| macOS-застосунок | 👉 **[Останній реліз](../../releases/latest)** → `SuMeeting.dmg` (підписаний і нотаризований Apple) |
+| Chrome-розширення | 👉 **[Chrome Web Store](https://chromewebstore.google.com/detail/sumeeting/olciponfpbfpaohpjclonfebcmaeeghd)** |
 
 ## Вимоги
 
@@ -24,19 +22,12 @@
 
 ## Встановлення
 
-### 1. macOS-застосунок
-
 1. Відкрий `SuMeeting.dmg` і перетягни **SuMeeting** у **Applications**.
 2. Запусти SuMeeting — при першому запуску він запропонує:
    - вибрати рушій транскрипції (локальний Canary або AssemblyAI з API-ключем);
    - завантажити модель (для локального рушія);
    - залогінитись у Claude Code (для summary / action points).
-
-### 2. Chrome-розширення
-
-1. Розпакуй `SuMeeting-extension.zip` у постійну папку (не видаляй її потім).
-2. Відкрий `chrome://extensions`, увімкни **Developer mode** (перемикач праворуч угорі).
-3. Натисни **Load unpacked** і вибери розпаковану папку.
+3. Встанови розширення [з Chrome Web Store](https://chromewebstore.google.com/detail/sumeeting/olciponfpbfpaohpjclonfebcmaeeghd).
 
 ## Використання
 
