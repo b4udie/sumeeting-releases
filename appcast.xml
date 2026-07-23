@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>SuMeeting</title>
+        <item>
+            <title>0.3.0</title>
+            <pubDate>Thu, 23 Jul 2026 18:58:21 +0300</pubDate>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>0.3.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <enclosure url="https://github.com/b4udie/sumeeting-releases/releases/download/v0.3.0/SuMeeting-0.3.0.zip" length="510463387" type="application/octet-stream" sparkle:edSignature="wD7mxXAHS30Xcmal+bpRtT8BWHgy+WS1IHVzPxzsugbMeH0VmcerZua0rhuKlOWAMMfYzoiiw6+/l3S8qjUvCw=="/>
+        </item>
+    </channel>
+</rss>
