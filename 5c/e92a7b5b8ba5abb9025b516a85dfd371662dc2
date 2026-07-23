@@ -1,0 +1,19 @@
+appcast.xml
+  s_760fba5c46e073::t_4a562f69f24be4 1-15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "5ce92a7b5b8ba5abb9025b516a85dfd371662dc2",
+  "prompts": {},
+  "sessions": {
+    "s_760fba5c46e073": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "99ee7e08-a78f-4259-9b02-de975efc4b61",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Valentyn Bratkevych <valentyn.bratkevych@gen.tech>"
+    }
+  }
+}
