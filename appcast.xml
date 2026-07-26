@@ -3,17 +3,18 @@
     <channel>
         <title>SuMeeting</title>
         <item>
-            <title>0.4.1</title>
-            <pubDate>Sat, 25 Jul 2026 17:41:30 +0300</pubDate>
-            <sparkle:version>4</sparkle:version>
-            <sparkle:shortVersionString>0.4.1</sparkle:shortVersionString>
+            <title>0.5.0</title>
+            <pubDate>Sun, 26 Jul 2026 03:54:52 +0300</pubDate>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>0.5.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/b4udie/sumeeting-releases/releases/download/v0.4.1/SuMeeting-0.4.1.zip" length="585812753" type="application/octet-stream" sparkle:edSignature="jRWATnCLhPTQIodkD/rgyNswfotndKZXi8v+Trrw/bKb5O+EQydBunuwH0lnfwJdt56Ljb6LIDbxe+h6L30LAw=="/>
+            <enclosure url="https://github.com/b4udie/sumeeting-releases/releases/download/v0.5.0/SuMeeting-0.5.0.zip" length="585848496" type="application/octet-stream" sparkle:edSignature="L4Q74ize1s4U2RZ1YvgM7QfFgB2GCnD3u2ZlWDn+yDVjYMrTtgK9uXZDy7PhPZfPHDxIZeiL5YiVN8tUK+HlBA=="/>
             <sparkle:deltas>
-                <enclosure url="https://github.com/b4udie/sumeeting-releases/releases/download/v0.4.1/SuMeeting4-3.delta" sparkle:deltaFrom="3" length="765310" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="3vmUCkROGNeorO419rQF2vGZ/wWLcIe3glQ8n8I/nhZGcdVbaNIRLLiY01To8z0UaRY6b13jblb/Q2cmEhZmBg=="/>
-                <enclosure url="https://github.com/b4udie/sumeeting-releases/releases/download/v0.4.1/SuMeeting4-2.delta" sparkle:deltaFrom="2" length="1110702" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="UWshIT7NqPRVv5RQD5h9zsvUHFspRWyI+HhDV6PumL3EVdvGJt1XKywTc4xYommUV+8rUSgdFFYWKRTlPHZwCA=="/>
-                <enclosure url="https://github.com/b4udie/sumeeting-releases/releases/download/v0.4.1/SuMeeting4-1.delta" sparkle:deltaFrom="1" length="31683962" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="whMXF3oWy8dzHHrDy8974QxttgQONB4Uk8nkHKZ2YKn0Lbz93Gi1LOL4Tr2rdo1K33gcoMEa9RmNp6EM6xDRCw=="/>
+                <enclosure url="https://github.com/b4udie/sumeeting-releases/releases/download/v0.5.0/SuMeeting5-4.delta" sparkle:deltaFrom="4" length="824230" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="FrDDzzT9VvNdPrtPRqbm2jXfEUMUUbX+vIr2xFRkHP/tkAzi0lgU5Wf72dqGER/BnKi4UExmHuNS4Ao84jzOBQ=="/>
+                <enclosure url="https://github.com/b4udie/sumeeting-releases/releases/download/v0.5.0/SuMeeting5-3.delta" sparkle:deltaFrom="3" length="863646" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="QZzafbzKiQxY1qvl5hp71JCRO9As5kyQI6YRMr9D/PzTqHUQ5tjiBpuW1bRu490eTMvciQYr+Rdtp1I8aUZZDQ=="/>
+                <enclosure url="https://github.com/b4udie/sumeeting-releases/releases/download/v0.5.0/SuMeeting5-2.delta" sparkle:deltaFrom="2" length="1178870" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="q5iM0Q3yFMLh0q8SneP1nAPoVh6RVwxR6LATueZKBVSkFgzqeHhWWRVmDPwSUn0YtUpzGWexkbrf8KtlxK9VAQ=="/>
+                <enclosure url="https://github.com/b4udie/sumeeting-releases/releases/download/v0.5.0/SuMeeting5-1.delta" sparkle:deltaFrom="1" length="31729938" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="kQBYlOMnq+nigNwe55xwR4O7k8Hcv0FJIOz5Z5kKjYclJvLzyTNLIlreSYf8wgT/nuugTpqES2BAgIC3bv6GDA=="/>
             </sparkle:deltas>
         </item>
     </channel>
