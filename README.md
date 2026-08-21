@@ -33,6 +33,19 @@
      шлях до бінаря `claude` вручну на тому ж екрані.
 3. Встанови розширення [з Chrome Web Store](https://chromewebstore.google.com/detail/sumeeting/olciponfpbfpaohpjclonfebcmaeeghd).
 
+### Якщо macOS каже «Apple could not verify "SuMeeting" is free of malware»
+
+Це наслідок бага у версіях **≤0.5.2**: апка тоді сама псувала власний підпис під час
+роботи, а заблокована апка не може оновитися. Разово виконай у Terminal:
+
+```
+find /Applications/SuMeeting.app -name __pycache__ -type d -exec rm -rf {} +
+```
+
+або просто перевстанови апку зі свіжого `SuMeeting.dmg` (записи не зникнуть — вони
+лежать окремо в `~/Library/Application Support/SuMeeting`). З 0.5.3 проблема виправлена
+і більше не повторюється.
+
 ### AssemblyAI: як отримати API-ключ
 
 1. Зареєструйся: **https://www.assemblyai.com/dashboard/signup**
