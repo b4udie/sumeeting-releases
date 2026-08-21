@@ -1,0 +1,19 @@
+README.md
+  s_55e512645ec0ab::t_1b0ed82848d751 36-48
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "1d5716198f8aadbab540a7086c03c253c3aa1fb2",
+  "prompts": {},
+  "sessions": {
+    "s_55e512645ec0ab": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0d975236-5309-4198-ac91-c8731e7ccce2",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Valentyn Bratkevych <valentyn.bratkevych@gen.tech>"
+    }
+  }
+}
