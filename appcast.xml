@@ -3,17 +3,13 @@
     <channel>
         <title>SuMeeting</title>
         <item>
-            <title>0.5.3</title>
-            <pubDate>Mon, 03 Aug 2026 14:50:58 +0300</pubDate>
-            <sparkle:version>8</sparkle:version>
-            <sparkle:shortVersionString>0.5.3</sparkle:shortVersionString>
+            <title>0.5.4</title>
+            <pubDate>Fri, 21 Aug 2026 17:16:44 +0300</pubDate>
+            <sparkle:version>9</sparkle:version>
+            <sparkle:shortVersionString>0.5.4</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/b4udie/sumeeting-releases/releases/download/v0.5.3/SuMeeting-0.5.3.zip" length="585866089" type="application/octet-stream" sparkle:edSignature="fixViB7mWBBcC5hUEkECZrDJSIreK5gsQgjU05uYUAfmPI63T3NHJUorSlE3MV2Zo+xRDxjf2QmBLeCUHId/CA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://github.com/b4udie/sumeeting-releases/releases/download/v0.5.3/SuMeeting8-7.delta" sparkle:deltaFrom="7" length="671926" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Mw5g5EFLQFNzt59wCbAuyNt/CFTJBDXLHWXC/pN1tu5oMATQ+znjQ7etDW7yCekiyeWMo8gT7wbjHzqWT1G6Dg=="/>
-                <enclosure url="https://github.com/b4udie/sumeeting-releases/releases/download/v0.5.3/SuMeeting8-6.delta" sparkle:deltaFrom="6" length="742318" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="dAJcdkejEpi7LJcENB+0H7eWnrNSCQStq208oW3ChIVKGNa4lTFKYoQe+lG7PzYOgWjD8iml+1sr4hDQbS+pCg=="/>
-            </sparkle:deltas>
+            <enclosure url="https://github.com/b4udie/sumeeting-releases/releases/download/v0.5.4/SuMeeting-0.5.4.zip" length="585896856" type="application/octet-stream" sparkle:edSignature="pA+7gvI8el70Y3TmQAaOmXqhn4sTpY6VFTvIj3KtGNIJwtM4lcLvEYHGZvCr1vMCKhdAdCwYJpN8IQoWtAJfCw=="/>
         </item>
     </channel>
 </rss>
