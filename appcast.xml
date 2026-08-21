@@ -10,6 +10,9 @@
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <enclosure url="https://github.com/b4udie/sumeeting-releases/releases/download/v0.5.4/SuMeeting-0.5.4.zip" length="585896856" type="application/octet-stream" sparkle:edSignature="pA+7gvI8el70Y3TmQAaOmXqhn4sTpY6VFTvIj3KtGNIJwtM4lcLvEYHGZvCr1vMCKhdAdCwYJpN8IQoWtAJfCw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/b4udie/sumeeting-releases/releases/download/v0.5.4/SuMeeting9-8.delta" sparkle:deltaFrom="8" length="764946" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="yDlMQrX4dht6g4sEpRKxeC/KQsbl/D21RCtPvumG8vsUsL6tyHhk7BvP1Lfl/sJMlIKBKumdR4Cw1DRoheoMCw=="/>
+            </sparkle:deltas>
         </item>
     </channel>
 </rss>
