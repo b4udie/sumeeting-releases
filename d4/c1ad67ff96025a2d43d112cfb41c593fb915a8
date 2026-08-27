@@ -1,0 +1,27 @@
+docs/style.css
+  s_7991a4c4b59db9::t_d5ddb6494b617e 1-51
+docs/terms.html
+  s_7991a4c4b59db9::t_158764a063e0d7 1-62
+README.md
+  s_7991a4c4b59db9::t_911a84d5163ddf 3-6,9-11,24-27,32-41,57,59-62,70-74
+docs/index.html
+  s_7991a4c4b59db9::t_3f5575d9bf00e4 1-116
+docs/privacy.html
+  s_7991a4c4b59db9::t_ae387ed315d9c9 1-178
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "d4c1ad67ff96025a2d43d112cfb41c593fb915a8",
+  "prompts": {},
+  "sessions": {
+    "s_7991a4c4b59db9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "9a1c7102-8e67-45d3-bb0e-aaddde57d3f5",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Valentyn Bratkevych <valentyn.bratkevych@gen.tech>"
+    }
+  }
+}
