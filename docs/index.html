@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SuMeeting — record, transcribe and summarize Google Meet calls on your Mac</title>
+  <meta name="description" content="SuMeeting is a macOS app and Chrome extension that records Google Meet calls, transcribes them (Ukrainian and English) and produces a summary with action points.">
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <img src="logo.png" alt="SuMeeting logo">
+    <span class="name">SuMeeting</span>
+    <nav>
+      <a href="./">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms</a>
+      <a href="https://github.com/b4udie/sumeeting-releases/releases/latest">Download</a>
+    </nav>
+  </header>
+
+  <h1>Meeting notes for Google Meet, <span class="grad">made on your Mac</span></h1>
+  <p class="lead">
+    SuMeeting records your Google Meet calls, transcribes them in Ukrainian and English, and
+    turns the transcript into a summary with action points. Recordings and transcripts stay
+    under your control — on your Mac or in your own Google Drive.
+  </p>
+
+  <div class="actions">
+    <a class="btn" href="https://github.com/b4udie/sumeeting-releases/releases/latest">Download for macOS</a>
+    <a class="btn secondary" href="https://chromewebstore.google.com/detail/sumeeting/olciponfpbfpaohpjclonfebcmaeeghd">Chrome extension</a>
+  </div>
+
+  <h2>What SuMeeting does</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Records the call</h3>
+      <p>The Chrome extension captures the audio (and video) of a Google Meet call together with your microphone. You start and stop recording yourself.</p>
+    </div>
+    <div class="card">
+      <h3>Transcribes with speaker labels</h3>
+      <p>The macOS app transcribes the recording with the NVIDIA Canary model — locally on Apple Silicon, or on a cloud GPU if you choose — and labels who said what.</p>
+    </div>
+    <div class="card">
+      <h3>Summarizes</h3>
+      <p>A summary and a list of action points are generated from the transcript with Claude Code, using your own Claude account.</p>
+    </div>
+    <div class="card">
+      <h3>Keeps your data yours</h3>
+      <p>Transcripts and summaries live in a local database on your Mac. Recordings are stored locally or in a folder in your own Google Drive.</p>
+    </div>
+  </div>
+
+  <h2>How SuMeeting uses your Google account</h2>
+  <p>
+    SuMeeting asks you to sign in with Google and requests two permissions. Both are optional
+    to the extent described below, and you can revoke them at any time at
+    <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+  </p>
+  <table>
+    <tr><th style="width:38%">Permission</th><th>Why SuMeeting needs it</th></tr>
+    <tr>
+      <td>Google Drive — <em>files created by this app</em><br><code>drive.file</code></td>
+      <td>
+        Stores your meeting recordings in a <code>SuMeeting</code> folder in your Drive when you
+        choose Drive as the recording storage, and plays them back from there. When the cloud
+        transcription engine is selected, the recording is placed temporarily in
+        <code>SuMeeting/Transit</code> so the transcription worker can fetch it; the file is
+        deleted as soon as transcription finishes. SuMeeting can only see files it created —
+        never your other Drive files.
+      </td>
+    </tr>
+    <tr>
+      <td>Google Calendar — <em>read-only access to events</em><br><code>calendar.events.readonly</code></td>
+      <td>
+        Finds the calendar event that matches the Google Meet call you recorded (by the Meet
+        room code and start time) and reads its attendee list, so the meeting is saved with the
+        correct participants instead of a best-effort list scraped from the Meet screen.
+        SuMeeting never creates, edits or deletes calendar events.
+      </td>
+    </tr>
+  </table>
+  <p class="note">
+    Details of what is collected, stored and shared are in the
+    <a href="privacy.html">Privacy Policy</a>.
+  </p>
+
+  <h2>Requirements</h2>
+  <ul>
+    <li>macOS 13 or newer on Apple Silicon (M1 and later)</li>
+    <li>Google Chrome with the SuMeeting extension</li>
+    <li>A Google account (for sign-in, Drive storage and Calendar participants)</li>
+    <li>Claude Code (optional, for summaries and action points)</li>
+  </ul>
+
+  <h2>Install</h2>
+  <ol>
+    <li>Download <code>SuMeeting.dmg</code> from the <a href="https://github.com/b4udie/sumeeting-releases/releases/latest">latest release</a> and drag SuMeeting into Applications.</li>
+    <li>Install the <a href="https://chromewebstore.google.com/detail/sumeeting/olciponfpbfpaohpjclonfebcmaeeghd">Chrome extension</a>.</li>
+    <li>Open SuMeeting, sign in with Google and follow the first-run setup.</li>
+  </ol>
+
+  <footer>
+    <nav>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="https://github.com/b4udie/sumeeting-releases">Releases on GitHub</a>
+      <a href="mailto:bratkevychv@gmail.com">Contact</a>
+    </nav>
+    <p>© 2026 Valentyn Bratkevych. SuMeeting is not affiliated with Google. Google Meet, Google Drive and Google Calendar are trademarks of Google LLC.</p>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SuMeeting — Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for the SuMeeting macOS app and Chrome extension: what data is collected, how Google user data is used, stored and shared.">
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <img src="logo.png" alt="SuMeeting logo">
+    <span class="name">SuMeeting</span>
+    <nav>
+      <a href="./">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms</a>
+      <a href="https://github.com/b4udie/sumeeting-releases/releases/latest">Download</a>
+    </nav>
+  </header>
+
+  <h1>Privacy Policy</h1>
+  <p class="lead">Effective date: 27 August 2026</p>
+
+  <p>
+    This Privacy Policy describes how SuMeeting (the macOS application and the companion Chrome
+    extension, together the “App”) handles your information. The App is developed and
+    operated by Valentyn Bratkevych (“we”, “us”). Contact:
+    <a href="mailto:bratkevychv@gmail.com">bratkevychv@gmail.com</a>.
+  </p>
+  <p>
+    SuMeeting is designed as a local-first tool: your recordings, transcripts and summaries are
+    processed and kept on your own Mac and, if you choose, in your own Google Drive. We do not
+    operate a server that receives, stores or analyses your meetings, and we do not have access to
+    your Google account data.
+  </p>
+
+  <h2>1. Information the App handles</h2>
+  <h3>1.1 Meeting recordings</h3>
+  <p>
+    When you start a recording in Google Meet, the Chrome extension captures the audio of the
+    call (other participants) and your microphone, and the video of the call. The recording is
+    sent only to the SuMeeting app running on your Mac (over <code>localhost</code>). You decide
+    when recording starts and stops.
+  </p>
+  <h3>1.2 Meeting metadata from Google Meet</h3>
+  <p>
+    The extension reads the meeting title, the Meet room code, the names of participants shown
+    in the call and which participant is speaking, from the Google Meet page. This is used to
+    label speakers and to name the meeting.
+  </p>
+  <h3>1.3 Transcripts, summaries and action points</h3>
+  <p>
+    Transcripts are produced from the recording; summaries and action points are produced from
+    the transcript (see section 3). They are stored in a local database on your Mac.
+  </p>
+  <h3>1.4 Google user data</h3>
+  <p>The App accesses the following Google user data with your explicit consent (OAuth 2.0):</p>
+  <table>
+    <tr><th style="width:32%">Data</th><th>Scope</th><th>Purpose</th></tr>
+    <tr>
+      <td>Your Google account email address</td>
+      <td><code>drive.file</code> (read from the Drive <code>about</code> endpoint)</td>
+      <td>To identify the signed-in account inside the App and confirm it is eligible to use the App.</td>
+    </tr>
+    <tr>
+      <td>Files in your Google Drive that SuMeeting itself created</td>
+      <td><code>https://www.googleapis.com/auth/drive.file</code></td>
+      <td>
+        To store your meeting recordings in a <code>SuMeeting</code> folder in your Drive (when
+        you select Drive storage), to play them back, and to temporarily hold a recording in
+        <code>SuMeeting/Transit</code> while the cloud transcription engine processes it. The App
+        cannot see, list or modify any other file in your Drive.
+      </td>
+    </tr>
+    <tr>
+      <td>Calendar events on your primary calendar</td>
+      <td><code>https://www.googleapis.com/auth/calendar.events.readonly</code></td>
+      <td>
+        To find the event that matches a recorded Google Meet call (by Meet room code and start
+        time, within a window of a few hours around the recording) and read its title, time, Meet
+        link and attendee list (display name, email address, response status, organizer), so that
+        the saved meeting has an accurate participant list. The App never creates, modifies or
+        deletes events.
+      </td>
+    </tr>
+  </table>
+  <p>
+    OAuth tokens are stored in the macOS Keychain on your Mac. The Google sign-in is optional
+    for recording and local transcription, but required for Drive storage, the cloud
+    transcription engine and Calendar-based participants.
+  </p>
+
+  <h2>2. How the App uses Google user data</h2>
+  <ul>
+    <li><strong>Drive files</strong> are used only to store and play back your own recordings and to transfer a recording to the transcription worker (section 3.2). Transit files are deleted immediately after transcription completes; if the App is interrupted, leftover transit files are deleted automatically on the next start.</li>
+    <li><strong>Calendar data</strong> is used only to derive the participant list of a recorded meeting. From the matched event the App keeps the participants’ names (and email addresses, from which a display name is derived when none is set) and the event identifier, together with the meeting in the local database. Other event content is not retained.</li>
+    <li><strong>Email address</strong> is used only for display and eligibility checks inside the App.</li>
+  </ul>
+  <p>
+    Google user data is <strong>not</strong> used for advertising, is <strong>not</strong> sold,
+    is <strong>not</strong> used to train machine-learning or AI models, and is
+    <strong>not</strong> read by humans except you, unless required by law or with your
+    explicit consent for support purposes.
+  </p>
+
+  <h2>3. Third-party services (data sharing)</h2>
+  <p>The App shares data with third parties only as needed to provide features you enable:</p>
+  <h3>3.1 Anthropic — Claude Code (summaries and action points)</h3>
+  <p>
+    If you set up Claude Code, the App sends the meeting transcript together with meeting
+    metadata (title, date, and the participant names — which may come from your Google Calendar
+    event) to Anthropic’s Claude through the Claude Code tool, under <em>your own</em> Anthropic
+    account, to generate the summary and action points. This processing is governed by
+    Anthropic’s terms and privacy policy. You can skip Claude Code setup; the App works without
+    summaries.
+  </p>
+  <h3>3.2 RunPod — cloud transcription engine (optional)</h3>
+  <p>
+    If you select the “Cloud GPU” transcription engine, the recording is transcribed on a GPU
+    worker operated by us on RunPod infrastructure in EU data centres. To transfer the recording,
+    the App uploads it to <code>SuMeeting/Transit</code> in your Google Drive and passes the
+    worker a short-lived (≤ 1 hour) Drive access token limited to files created by the App. The
+    worker downloads the file, transcribes it in memory and returns the transcript to the App on
+    your Mac; the worker does not keep the recording, the token or the transcript after the job
+    completes, and the transit file is deleted from your Drive by the App. If you select the
+    “Local” engine, nothing leaves your Mac.
+  </p>
+  <h3>3.3 Google</h3>
+  <p>Drive and Calendar data are exchanged directly between your Mac and Google’s APIs, subject to Google’s privacy policy.</p>
+  <p>No other third parties receive your data. We do not use analytics or tracking services.</p>
+
+  <h2>4. Storage, retention and deletion</h2>
+  <ul>
+    <li>Transcripts, summaries, participant lists and metadata are stored in a local SQLite database in <code>~/Library/Application Support/SuMeeting</code> on your Mac.</li>
+    <li>Recordings are stored either in the same folder on your Mac or in the <code>SuMeeting</code> folder of your Google Drive, according to your setting.</li>
+    <li>You can configure automatic deletion of recordings by age and by total disk usage in Settings → Storage, and delete any meeting at any time from the App.</li>
+    <li>Signing out of Google in the App deletes the stored tokens from the Keychain. You can also revoke the App’s access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>; the App will stop accessing your Google data immediately.</li>
+    <li>Deleting the App and its Application Support folder removes all locally stored data.</li>
+  </ul>
+
+  <h2>5. Security</h2>
+  <p>
+    OAuth tokens are kept in the macOS Keychain. Communication with Google, Anthropic and RunPod
+    uses HTTPS. The transcription worker receives only a short-lived, narrowly scoped token. The
+    App is signed and notarized by Apple and updates are cryptographically signed.
+  </p>
+
+  <h2>6. Google API Services User Data Policy — Limited Use</h2>
+  <p>
+    SuMeeting’s use and transfer to any other app of information received from Google APIs will
+    adhere to the
+    <a href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes">Google API Services User Data Policy</a>,
+    including the Limited Use requirements.
+  </p>
+
+  <h2>7. Children</h2>
+  <p>The App is intended for professional use by adults and is not directed at children under 16.</p>
+
+  <h2>8. Changes to this policy</h2>
+  <p>We may update this policy; the effective date at the top will change and the current version will always be available at this address.</p>
+
+  <h2>9. Contact</h2>
+  <p>Questions or requests regarding your data: <a href="mailto:bratkevychv@gmail.com">bratkevychv@gmail.com</a>.</p>
+
+  <footer>
+    <nav>
+      <a href="./">Home</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="https://github.com/b4udie/sumeeting-releases">Releases on GitHub</a>
+    </nav>
+    <p>© 2026 Valentyn Bratkevych.</p>
+  </footer>
+</div>
+</body>
+</html>

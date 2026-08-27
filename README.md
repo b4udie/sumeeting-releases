@@ -1,10 +1,14 @@
 # SuMeeting — Releases
 
-**SuMeeting** записує дзвінки в Google Meet (аудіо + відео), локально транскрибує їх
-(NVIDIA Canary-1b-v2, укр/англ) і генерує summary та action points через Claude Code.
-Все працює на твоєму Mac — аудіо нікуди не завантажується (опційно можна ввімкнути AssemblyAI).
+**SuMeeting** записує дзвінки в Google Meet (аудіо + відео), транскрибує їх
+(NVIDIA Canary-1b-v2, укр/англ — локально на твоєму Mac або на хмарному GPU) і генерує
+summary та action points через Claude Code. Транскрипти й summary зберігаються локально,
+записи — на Mac або в твоєму Google Drive.
 
 > Це репозиторій лише для дистрибуції. Сорс-код — у приватному репо.
+> Сайт: **https://b4udie.github.io/sumeeting-releases/** ·
+> [Privacy Policy](https://b4udie.github.io/sumeeting-releases/privacy.html) ·
+> [Terms](https://b4udie.github.io/sumeeting-releases/terms.html)
 
 ## Завантаження
 
@@ -17,20 +21,24 @@
 
 - **macOS 13+** на **Apple Silicon** (M1 і новіші)
 - **Google Chrome** (для розширення)
-- ~6–7 ГБ вільного місця (модель транскрипції завантажується при першому запуску;
-  не потрібно, якщо обираєш AssemblyAI)
-- **Claude Code** (для summary / action points)
+- **Google-акаунт** (вхід, сховище записів у Drive, учасники з Calendar)
+- ~6–7 ГБ вільного місця для локального рушія транскрипції (модель завантажується при
+  першому запуску; не потрібно, якщо обираєш Cloud GPU)
+- **Claude Code** (для summary / action points; можна пропустити)
 
 ## Встановлення
 
 1. Відкрий `SuMeeting.dmg` і перетягни **SuMeeting** у **Applications**.
-2. Запусти SuMeeting — при першому запуску він запропонує:
-   - **вибрати рушій транскрипції**: локальний Canary (все на твоєму Mac) або AssemblyAI
-     (хмара, потрібен API-ключ — [як отримати](#assemblyai-як-отримати-api-ключ));
-   - **завантажити модель** (для локального рушія) — цей крок **можна пропустити**
-     і завантажити пізніше в Settings → System Readiness;
-   - **Claude Code** застосунок знайде сам; якщо раптом не знайде — просто вкажи
-     шлях до бінаря `claude` вручну на тому ж екрані.
+2. Запусти SuMeeting, увійди через Google. При першому запуску він запропонує:
+   - **рушій транскрипції**: **Local** (усе на твоєму Mac) або **Cloud GPU** (той самий
+     Canary на GPU в EU, ~2 хв на годину запису). Апка сама рекомендує варіант під твій Mac
+     (бейдж «Recommended for this Mac»): Pro/Max/Ultra з 16+ ГБ → Local, базові M-чипи,
+     Intel або <16 ГБ → Cloud GPU. Переключити можна будь-коли в Settings;
+   - **завантажити модель** (для Local) — цей крок **можна пропустити** і зробити пізніше
+     в Settings → System Readiness;
+   - **сховище записів**: Google Drive (рекомендовано) або локально;
+   - **Claude Code** — кнопка «Authorize Claude» установить і залогінить його сама; якщо
+     бінар уже є, апка його знайде.
 3. Встанови розширення [з Chrome Web Store](https://chromewebstore.google.com/detail/sumeeting/olciponfpbfpaohpjclonfebcmaeeghd).
 
 ### Якщо macOS каже «Apple could not verify "SuMeeting" is free of malware»
@@ -46,15 +54,12 @@ find /Applications/SuMeeting.app -name __pycache__ -type d -exec rm -rf {} +
 лежать окремо в `~/Library/Application Support/SuMeeting`). З 0.5.3 проблема виправлена
 і більше не повторюється.
 
-### AssemblyAI: як отримати API-ключ
+### Якщо Google при вході показує «Google hasn't verified this app»
 
-1. Зареєструйся: **https://www.assemblyai.com/dashboard/signup**
-2. Підтверди пошту — одразу після підтвердження відкриється екран з твоїм API-ключем.
-3. Встав ключ у SuMeeting (онбординг або Settings).
-
-Безкоштовного ліміту вистачає приблизно на **~150 годин** транскрибації. Коли він
-вичерпається — можна зареєструвати новий акаунт на аліас тієї ж пошти: додай `+1`
-(далі `+2` і т.д.) перед `@`, наприклад `example+2@gmail.com`.
+Апка запитує доступ до Google Calendar (лише читання подій — щоб узяти список учасників
+мітингу), і Google показує це попередження, поки триває верифікація застосунку. Натисни
+**Advanced → Go to SuMeeting** і дай дозволи — це безпечно, дані календаря нікуди, крім
+твого Mac, не йдуть (див. [Privacy Policy](https://b4udie.github.io/sumeeting-releases/privacy.html)).
 
 ## Використання
 
@@ -62,7 +67,8 @@ find /Applications/SuMeeting.app -name __pycache__ -type d -exec rm -rf {} +
 2. Зайди в дзвінок Google Meet.
 3. **Вкажи своє ім'я в розширенні** — коли говориш ти, Google Meet тобі цього не
    показує, тож із указаним ім'ям транскрипції набагато легше правильно розділити мовців.
-4. Натисни іконку розширення → **Start recording** (дай дозвіл на мікрофон при першому разі).
-5. Після дзвінка натисни **Stop** — або просто **закрий вкладку з мітом**, це теж
-   коректно завершує запис. Запис піде на обробку, транскрипція і summary
-   з'являться в застосунку SuMeeting.
+4. Натисни **⌘⇧E** або іконку розширення → **Start recording** (дай дозвіл на мікрофон
+   при першому разі). Мікрофон береться той самий, що зараз у Meet.
+5. Після дзвінка натисни **Stop** — або просто **вийди з дзвінка / закрий вкладку**, запис
+   завершиться сам. Запис піде на обробку, транскрипція і summary з'являться в
+   застосунку SuMeeting.
