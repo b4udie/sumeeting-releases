@@ -1,0 +1,19 @@
+docs/CNAME
+  s_7991a4c4b59db9::t_4565b2333c68c8 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "3019f8d46f9211fd7ce35ef996a8175f1e115b72",
+  "prompts": {},
+  "sessions": {
+    "s_7991a4c4b59db9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "9a1c7102-8e67-45d3-bb0e-aaddde57d3f5",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Valentyn Bratkevych <valentyn.bratkevych@gen.tech>"
+    }
+  }
+}
