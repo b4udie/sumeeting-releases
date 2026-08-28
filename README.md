@@ -6,9 +6,9 @@ summary та action points через Claude Code. Транскрипти й sum
 записи — на Mac або в твоєму Google Drive.
 
 > Це репозиторій лише для дистрибуції. Сорс-код — у приватному репо.
-> Сайт: **https://b4udie.github.io/sumeeting-releases/** ·
-> [Privacy Policy](https://b4udie.github.io/sumeeting-releases/privacy.html) ·
-> [Terms](https://b4udie.github.io/sumeeting-releases/terms.html)
+> Сайт: **https://sumeeting.aura-shield.app/** ·
+> [Privacy Policy](https://sumeeting.aura-shield.app/privacy.html) ·
+> [Terms](https://sumeeting.aura-shield.app/terms.html)
 
 ## Завантаження
 
@@ -59,7 +59,7 @@ find /Applications/SuMeeting.app -name __pycache__ -type d -exec rm -rf {} +
 Апка запитує доступ до Google Calendar (лише читання подій — щоб узяти список учасників
 мітингу), і Google показує це попередження, поки триває верифікація застосунку. Натисни
 **Advanced → Go to SuMeeting** і дай дозволи — це безпечно, дані календаря нікуди, крім
-твого Mac, не йдуть (див. [Privacy Policy](https://b4udie.github.io/sumeeting-releases/privacy.html)).
+твого Mac, не йдуть (див. [Privacy Policy](https://sumeeting.aura-shield.app/privacy.html)).
 
 ## Використання
 
