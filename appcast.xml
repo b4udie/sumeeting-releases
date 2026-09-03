@@ -3,17 +3,17 @@
     <channel>
         <title>SuMeeting</title>
         <item>
-            <title>0.9.0</title>
-            <pubDate>Wed, 02 Sep 2026 22:04:05 +0300</pubDate>
-            <sparkle:version>18</sparkle:version>
-            <sparkle:shortVersionString>0.9.0</sparkle:shortVersionString>
+            <title>0.9.1</title>
+            <pubDate>Thu, 03 Sep 2026 23:16:38 +0300</pubDate>
+            <sparkle:version>19</sparkle:version>
+            <sparkle:shortVersionString>0.9.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/b4udie/sumeeting-releases/releases/download/v0.9.0/SuMeeting-0.9.0.zip" length="586602991" type="application/octet-stream" sparkle:edSignature="8EaXx3ZH7boyqfdWaVT+i+AQK48VR0HQXN3lNxYQLv/dP4hwv4+oJhwK/VuGrG8SsrM/W6eWTr0x0antgYRUDQ=="/>
+            <enclosure url="https://github.com/b4udie/sumeeting-releases/releases/download/v0.9.1/SuMeeting-0.9.1.zip" length="586615717" type="application/octet-stream" sparkle:edSignature="aMoBMOUeyoi8c4oeGpcVwcwDU5I908G6sEfK8gHFKZX2veULERVqEmniZuXOqnFvEuH2UStEReOTtEF5a2L5CA=="/>
             <sparkle:deltas>
-                <enclosure url="https://github.com/b4udie/sumeeting-releases/releases/download/v0.9.0/SuMeeting18-17.delta" sparkle:deltaFrom="17" length="988002" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="F00tBMaqvcO/dqUqi1YZo80qMu3NmNce0Q9IPoScaB5K6IpLSkESsd2Hbn430CbCHCRZttH1EVqZXqYtTBQBCg=="/>
-                <enclosure url="https://github.com/b4udie/sumeeting-releases/releases/download/v0.9.0/SuMeeting18-16.delta" sparkle:deltaFrom="16" length="1153890" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="lc4hCwGImxSQtpNposAhRALrkY4olsGp5FhkoYHht+HDEjEDnKGOIz9bq927G54IDPZeMBpzG+Gr1wfA/mE2Bw=="/>
-                <enclosure url="https://github.com/b4udie/sumeeting-releases/releases/download/v0.9.0/SuMeeting18-15.delta" sparkle:deltaFrom="15" length="1185534" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="BBPMKAslpDbJsIwWXX2RSlK0URsBJji/0GgDpmhu1NZ3EusIUyqQWCPf/5MoR0o5DvBLznfzFoZUAttMSHKfBg=="/>
+                <enclosure url="https://github.com/b4udie/sumeeting-releases/releases/download/v0.9.1/SuMeeting19-18.delta" sparkle:deltaFrom="18" length="845326" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="sM/SRT95RVfFo84j3pNNeXZQjkdA9RtPm5RJYTKVPSzz4P6FPwAoE9/aY7zInXWfjCeTiM6rnCN+Ytb94SHFAw=="/>
+                <enclosure url="https://github.com/b4udie/sumeeting-releases/releases/download/v0.9.1/SuMeeting19-17.delta" sparkle:deltaFrom="17" length="1020934" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="HkUn/a90GrISq8I8U1Iy/Nml8XeGfmuswFqdRGeZ09IK97NeGikJIjf1kN8+VzKwzSB+BY37tm1W2OToyEHaAA=="/>
+                <enclosure url="https://github.com/b4udie/sumeeting-releases/releases/download/v0.9.1/SuMeeting19-16.delta" sparkle:deltaFrom="16" length="1182082" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="zuKXBGGO0ZgYMIgY4p4LDaQfpM6Q8cyGhzNjSzQvPuDdDQoIayN+rTtPG2V6SkOUDQBzn3nEiN0Zy7A3Dm3fBQ=="/>
             </sparkle:deltas>
         </item>
     </channel>
