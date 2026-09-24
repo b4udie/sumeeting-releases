@@ -1,0 +1,19 @@
+appcast.xml
+  s_74871aadb163c9::t_6c9ba092e19b8a 6-9,12,14-16,26
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "16bff802e97217095900902c4ffc5018d094b064",
+  "prompts": {},
+  "sessions": {
+    "s_74871aadb163c9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7cc3b11d-cd34-4594-881d-6f8db16ff1df",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Valentyn Bratkevych <valentyn.bratkevych@gen.tech>"
+    }
+  }
+}
