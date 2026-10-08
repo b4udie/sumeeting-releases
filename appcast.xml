@@ -3,6 +3,21 @@
     <channel>
         <title>SuMeeting</title>
         <item>
+            <title>1.6.0-beta.1</title>
+            <pubDate>Thu, 08 Oct 2026 21:11:51 +0300</pubDate>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>34</sparkle:version>
+            <sparkle:shortVersionString>1.6.0-beta.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <enclosure url="https://github.com/b4udie/sumeeting-releases/releases/download/v1.6.0-beta.1/SuMeeting-1.6.0-beta.1.zip" length="595778447" type="application/octet-stream" sparkle:edSignature="hczC2et/omLQkShoto5zzDTV8lqiR9s3PvmpWe+OBycNrwKhqAKar59Sg1yylPgoTlKpFOMFgSEGbSj/mVCLAw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/b4udie/sumeeting-releases/releases/download/v1.6.0-beta.1/SuMeeting34-33.delta" sparkle:deltaFrom="33" length="1510306" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="USBxH2jnLe/t9Bg8+Zy9lzQ6c+M0MfPGL8jKaXKczBLT61pTHdFepEMHJs43F3j7yU3hYJ9VfAbT1IY7T8usBQ=="/>
+                <enclosure url="https://github.com/b4udie/sumeeting-releases/releases/download/v1.6.0-beta.1/SuMeeting34-32.delta" sparkle:deltaFrom="32" length="3391934" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="2IA53Gli8wktWwffPNNihNiUIoqLQkdWWmpd+9Riur+E1VlMFCEKsgKLkIXq8+8TGqdIWix4m51/saBeyEPZBA=="/>
+                <enclosure url="https://github.com/b4udie/sumeeting-releases/releases/download/v1.6.0-beta.1/SuMeeting34-29.delta" sparkle:deltaFrom="29" length="4922274" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="K0Zv3BL6FDbyw5iJCb0wOfzGMcN/laqLIhjbR2rsOGnuL3vcZfr+Lcjyi3P61dMG2sk0+5uDGTjyFDWcRb40DQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>1.5.1</title>
             <pubDate>Tue, 06 Oct 2026 11:18:35 +0300</pubDate>
             <sparkle:version>33</sparkle:version>
