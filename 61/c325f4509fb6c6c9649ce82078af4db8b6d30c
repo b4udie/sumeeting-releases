@@ -1,0 +1,19 @@
+beta-testers.json
+  s_2c49342d50144e::t_d6e6b2acac1de4 4-12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "61c325f4509fb6c6c9649ce82078af4db8b6d30c",
+  "prompts": {},
+  "sessions": {
+    "s_2c49342d50144e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2157b8c9-7f93-4867-8272-6c7270671dc6",
+        "model": "claude-fable-5-1"
+      },
+      "human_author": "Valentyn Bratkevych <valentyn.bratkevych@gen.tech>"
+    }
+  }
+}
